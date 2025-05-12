@@ -1,9 +1,11 @@
 
-export const ImageCard = () => {
+export const ImageCard = ({ image, onClick }) => {
     return (
-        <div>
-            <img src="" alt="" />
+        <div onClick={onClick}>
+            <img
+                src={image.urls.small}
+                alt={image.alt_description || 'Unsplash image'} />
         </div>
 
     );
-}
+};
