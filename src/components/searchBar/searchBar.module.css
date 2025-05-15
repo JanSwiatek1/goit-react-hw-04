@@ -1,0 +1,11 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap:10px;
+}
+.header{
+    display: flex;
+    justify-content: center; 
+    
+}

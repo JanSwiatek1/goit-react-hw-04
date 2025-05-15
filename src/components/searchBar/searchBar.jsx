@@ -1,14 +1,17 @@
-// import css from './contact.module.css';
+import css from './searchBar.module.css';
 // {onSubmit}
+
+export const hehe = 'XDDDD';
 export const SearchBar = ({ onSearch }) => {
   
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
     const form = evt.target;
-    const topic = form.elements.topic.value;
+
+    const topic = form.elements[0].value;
     
-    if(form.elements.topic.value.trim() === "") {
+    if(topic.trim() === "") {
 			alert("Please enter search term!")
 			return;
     }
@@ -20,13 +23,13 @@ export const SearchBar = ({ onSearch }) => {
 
   return (
 
-  <header>
-    <form onSubmit={handleSubmit}>
+  <header className={css.header}>
+    <form onSubmit={handleSubmit} className={css.form}>
       <input
-        class="input"
+        className="input"
         type="text"
-        autocomplete="off"
-        autofocus
+        autoComplete="off"
+        autoFocus
         placeholder="Search images and photos"
       />
       <button type="submit">Search</button>

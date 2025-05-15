@@ -1,0 +1,37 @@
+.modal{
+background-color: gray;
+}
+
+/* .overlay{
+
+} */
+
+.content{
+    color: #000;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+.box{
+    max-width: 1000px;
+    /* max-height: 1100px; */
+    
+}
+.foto{
+    max-width: 600px;
+    max-height: 550px;
+}
+.details{
+    /* max-height: 400px; */
+    padding: 10px;
+
+    color: #000;
+    p{
+        margin: 0;
+    }
+}
+/* .closeButton{
+
+} */

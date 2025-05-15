@@ -1,5 +1,5 @@
 import Modal from 'react-modal';
-import css from './ImageModal.module.css';
+import css from './imageModal.module.css';
 
 Modal.setAppElement('#root');
 
@@ -13,19 +13,24 @@ export const ImageModal = ({ isOpen, onClose, image }) => {
       className={css.modal}
       overlayClassName={css.overlay}
     >
+      <div  className={css.box}>
       <div className={css.content}>
         <img
           src={image.urls.regular}
           alt={image.alt_description || 'Unsplash image'}
+          className={css.foto}
         />
-        <div className={css.details}>
-          <p>Author: {image.user.name}</p>
-          <p>Likes: {image.likes}</p>
-          {image.description && <p>Description: {image.description}</p>}
-        </div>
         <button className={css.closeButton} onClick={onClose}>
           ×
         </button>
+        
+        
+      </div>
+      <div className={css.details}>
+          <p>Author: {image.user.name}</p>
+          <p>Likes: {image.likes}</p>
+          {image.description && <p>Description: {image.description}</p>}
+      </div>
       </div>
     </Modal>
   );
