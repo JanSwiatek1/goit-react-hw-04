@@ -23,7 +23,7 @@ const App = () => {
   const BASE_URL = 'https://api.unsplash.com/search/photos';
 
   useEffect(() => {
-    // if (!query) return;
+
 
     const fetchImages = async () => {
       try {
