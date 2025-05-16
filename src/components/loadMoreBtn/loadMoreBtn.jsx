@@ -1,4 +1,4 @@
-import css from './LoadMoreBtn.module.css';
+import css from './loadMoreBtn.module.css';
 
 export const LoadMoreBtn = ({ onClick }) => {
   return (
